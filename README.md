@@ -1,375 +1,533 @@
-# AiFi - Tokenized AI Agent Platform
+# Alpha Intelligence
 
-A decentralized platform built on Solana that empowers users to create, customize, deploy, and monetize personalized AI agents with unique personalities. Built with Next.js, React, and integrated with leading AI models (Claude, GPT-4, Gemini).
+An advanced AI platform for creators, artists, and innovators. Generate stunning AI images, engage with intelligent chatbots, create NFTs, and interact with cutting-edge AI technology on the Solana blockchain.
 
-## 🚀 Overview
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![Powered by Solana](https://img.shields.io/badge/Powered%20by-Solana-14F195?style=for-the-badge&logo=solana)](https://solana.com)
 
-AiFi is a Web3-enabled platform that bridges artificial intelligence with blockchain technology. Users can:
+## Overview
 
-- **Create Custom AI Agents**: Build AI agents with unique personalities and behaviors
-- **Deploy on Solana**: Leverage the Solana blockchain for efficient, low-cost operations
-- **Tokenize & Monetize**: Create tokens for your agents and earn through revenue sharing
-- **Interact & Trade**: Chat with agents, trade agent tokens, and access exclusive features
-- **Share & Discover**: Explore a marketplace of community-created agents
+Alpha Intelligence is a comprehensive AI-powered platform that combines image generation, conversational AI, voice chat, and blockchain integration. Built on Next.js and Solana, it offers users the ability to generate AI-created content, manage digital assets, and participate in a rewarding ecosystem.
 
-## ✨ Key Features
+## Key Features
 
-### AI Agent Creation & Management
-- **AI Studio**: Intuitive interface for designing custom AI agents
-- **Multi-Model Support**: Integration with Claude, GPT-4, and Gemini
-- **Prompt Engineering**: Enhance and optimize prompts before deployment
-- **Configuration Management**: Control agent behavior, personality, and parameters
-- **Version Control**: Track and manage different versions of your agents
+### 🎨 AI Image Generation
+- Advanced AI image generation with customizable styles
+- Prompt enhancement powered by AI
+- Gallery system with voting and curation
+- NSFW content detection and filtering
+- Download and share generated images
 
-### Blockchain Integration
-- **Solana Wallet Support**: Connect via Phantom, Solflare, Genesis wallets
-- **Token Creation**: Mint tokens for your AI agents (Pump.fun, Raydium, Meteora integration)
-- **Revenue Sharing**: Earn through token trades and platform interactions
-- **Transaction Tracking**: View wallet balance, transaction history, and rewards
-- **Smart Contracts**: Secure, transparent on-chain operations
+### 💬 AI Chat & Conversation
+- Real-time chat with AI assistants powered by Groq and OpenRouter
+- Multi-model support (Claude, GPT, and more)
+- Chat history and context management
+- Smart prompt enhancement
 
-### Marketplace & Discovery
-- **Agent Explorer**: Browse and discover community-created AI agents
-- **Agent Profiles**: View agent details, creator info, and interaction metrics
-- **Public Agents**: Share your agents publicly or keep them private
-- **Token Marketplace**: Trade agent tokens on integrated DEXs
+### 🎤 Voice Chat
+- Real-time voice conversation with AI using Hume AI's Empathic Voice Interface (EVI)
+- Speech-to-speech interaction
+- Natural language understanding
 
-### User Dashboard
-- **Profile Management**: Customize avatar, username, and bio
-- **Agent Analytics**: Track usage, performance, and earnings
-- **Token Distribution**: Monitor holdings and manage rewards
-- **Settings & Preferences**: Personalize your experience
+### 🎥 Video Generation
+- AI-powered video creation from text prompts
+- Integration with advanced video models
 
-### Chat & Interaction
-- **Real-time Chat**: Engage with AI agents in real-time
-- **Conversation History**: Save and reference past interactions
-- **Message Enhancement**: Automatic prompt optimization
-- **Multi-Agent Support**: Interact with different agents seamlessly
+### 🎬 NFT Minting
+- Mint AI-generated content as NFTs on Solana
+- Integration with Solana blockchain
+- NFT metadata management
 
-## 🛠️ Tech Stack
+### 💎 Credit System
+- Token-based credit system for generating content
+- Purchase credits with Solana
+- Token burn mechanism
+- Revenue sharing for content creators
+
+### 🪙 Token Integration
+- Solana wallet integration
+- Token swaps via Jupiter API
+- Support for custom token launches
+- Token purchase tracking and analytics
+
+### 🏪 Community Gallery
+- Browse community-created AI art
+- Vote on favorite creations
+- Top photos marquee
+- Community engagement tracking
+
+### 📊 Admin Dashboard
+- Content moderation tools
+- User management
+- Analytics and metrics
+- Token burn tracking
+
+## Tech Stack
 
 ### Frontend
-- **Framework**: Next.js 14.2 with React 19
-- **Styling**: Tailwind CSS with custom components
-- **UI Components**: Radix UI library (50+ pre-built components)
-- **State Management**: React Hooks
-- **Forms**: React Hook Form with Zod validation
-- **Charts & Visualization**: Recharts
+- **Framework**: Next.js 16 with TypeScript
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 4, CSS-in-JS animations
+- **Components**: Radix UI component system
+- **3D Graphics**: Three.js, React Three Fiber
+- **Forms**: React Hook Form, Zod validation
+- **Icons**: Lucide React
+- **Themes**: next-themes for dark mode support
 
-### Backend
+### Backend & API
 - **Runtime**: Node.js with Next.js API routes
-- **Database**: Neon (PostgreSQL serverless)
+- **AI Integration**: 
+  - Groq API for fast LLM inference
+  - OpenRouter for multiple AI models
+  - Hume AI for voice chat (EVI - Empathic Voice Interface)
+- **Image/Video Generation**: Custom integration endpoints
+- **API Client**: Vercel AI SDK
+
+### Blockchain & Web3
+- **Chain**: Solana
+- **Wallet**: Solana Wallet Adapter (React, UI, wallets)
+- **Token Standards**: SPL Token protocol
+- **DEX Integration**: Jupiter API for token swaps
+- **Smart Contract**: Solana Program Library
+
+### Database
+- **Primary**: PostgreSQL via Neon (serverless)
+- **ORM**: Raw SQL queries with Vercel Postgres
+- **Key Tables**: Users, Gallery, Token Purchases, NFTs, Token Burns
+
+### Storage & IPFS
 - **File Storage**: Vercel Blob
+- **Pinata**: IPFS integration for NFT metadata
+
+### Monitoring & Analytics
 - **Analytics**: Vercel Analytics
+- **Performance**: Vercel Speed Insights
 
-### AI & LLMs
-- **AI SDK**: Vercel AI SDK (5.0.57)
-  - Anthropic Claude
-  - OpenAI GPT-4
-  - Google Gemini
-- **Model Integration**: Multi-provider LLM support with unified API
+### Development Tools
+- **Package Manager**: pnpm
+- **Linting**: ESLint with modern config
+- **Build Tool**: Next.js built-in bundler
+- **Version Control**: Git
 
-### Blockchain
-- **Solana**: Web3.js integration
-- **Wallet Adapters**: Support for multiple Solana wallets
-  - Phantom
-  - Solflare
-  - Genesis
-  - And more...
-- **DEX Integration**:
-  - Pump.fun (token launching)
-  - Raydium (liquidity pools)
-  - Meteora (concentrated liquidity)
-- **Blockchain Explorer**: Solscan proxy integration
-
-### Additional Libraries
-- **Icons**: Lucide React, React Icons
-- **Dates**: date-fns
-- **Utilities**: clsx, class-variance-authority
-- **Toast Notifications**: Sonner
-- **UI Animations**: Tailwind CSS Animate
-
-## 📁 Project Structure
-
-```
-ai-fi/
-├── app/
-│   ├── api/                          # API routes
-│   │   ├── ai-configurations/        # AI agent endpoints
-│   │   ├── chat/                     # Chat functionality
-│   │   ├── tokens/                   # Token management
-│   │   ├── users/                    # User management
-│   │   ├── rewards/                  # Rewards system
-│   │   ├── distributions/            # Token distributions
-│   │   ├── upload/                   # File uploads
-│   │   ├── proxy/                    # External API proxies
-│   │   ├── enhance-prompt/           # Prompt optimization
-│   │   └── ...more endpoints
-│   ├── page.tsx                      # Main page
-│   ├── layout.tsx                    # Root layout with metadata
-│   ├── globals.css                   # Global styles
-│   └── actions.ts                    # Server actions
-├── components/
-│   ├── ui/                           # Radix UI components
-│   ├── dashboard.tsx                 # Main dashboard component
-│   ├── scrolling-ai-agents.tsx       # Agent carousel
-│   ├── token-creation-form.tsx       # Token creation UI
-│   ├── image-upload.tsx              # Image upload handler
-│   ├── view-toggle.tsx               # View switcher
-│   └── theme-provider.tsx            # Theme configuration
-├── hooks/
-│   ├── use-toast.ts                  # Toast notifications
-│   └── use-mobile.tsx                # Mobile detection
-├── lib/
-│   ├── utils.ts                      # Utility functions
-│   ├── revshare.ts                   # Revenue sharing logic
-│   ├── pumpfun.ts                    # Pump.fun integration
-│   ├── raydium.ts                    # Raydium integration
-├── public/                           # Static assets
-│   ├── images/                       # Images and design assets
-│   └── logos/                        # Partner logos
-├── scripts/                          # Database migration scripts
-│   ├── 001_create_users_table.sql
-│   ├── 002_create_ai_configurations_table.sql
-│   ├── 005_create_tokens_table.sql
-│   └── ...
-├── styles/                           # CSS files
-├── types/                            # TypeScript types
-├── dashboard.tsx                     # Main dashboard (large component)
-├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-├── next.config.mjs
-└── postcss.config.mjs
-```
-
-## 🚀 Getting Started
+## Installation
 
 ### Prerequisites
-- Node.js 18+ or pnpm 8+
-- A Solana wallet (Phantom, Solflare, or Genesis)
-- Environment variables configured
+- Node.js 18+ (LTS recommended)
+- pnpm 8+ or npm 9+
+- Git
+- Solana CLI (optional, for local development)
 
-### Installation
+### Setup Steps
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/ai-fi.git
-cd ai-fi
+git clone <repository-url>
+cd alpha-intelligence
 ```
 
 2. **Install dependencies**
 ```bash
-npm install
-# or
 pnpm install
+# or
+npm install
 ```
 
-3. **Set up environment variables**
-Create a `.env.local` file in the root directory:
-```env
+3. **Configure environment variables**
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```bash
 # Database
-DATABASE_URL=your_neon_postgres_url
+DATABASE_URL=postgresql://user:password@host:port/dbname
 
-# AI Model APIs
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key
-GOOGLE_GENERATIVE_AI_KEY=your_google_key
+# Solana
+NEXT_PUBLIC_SOLANA_NETWORK=mainnet-beta
+NEXT_PUBLIC_SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
 
-# Storage
+# AI Services
+GROQ_API_KEY=your_groq_api_key
+OPENROUTER_API_KEY=your_openrouter_api_key
+
+# Voice Chat (Hume AI)
+HUME_API_KEY=your_hume_api_key
+HUME_SECRET_KEY=your_hume_secret_key
+NEXT_PUBLIC_HUME_CONFIG_ID=your_hume_config_id (optional)
+
+# Image Generation & Storage
+PINATA_API_KEY=your_pinata_api_key
+PINATA_API_SECRET=your_pinata_api_secret
 BLOB_READ_WRITE_TOKEN=your_vercel_blob_token
 
-# Blockchain
-SOLANA_RPC_ENDPOINT=https://api.mainnet-beta.solana.com
+# Token Swap
+JUPITER_API_URL=https://quote-api.jup.ag/v6
 
-# Analytics (optional)
+# Admin Panel
+ADMIN_PASSWORD=secure_admin_password
+
+# Optional: Analytics
 NEXT_PUBLIC_VERCEL_ANALYTICS_ID=your_analytics_id
 ```
 
-4. **Run database migrations**
+4. **Setup Database**
+
+Run the SQL migration scripts:
 ```bash
-# Review and execute SQL scripts from /scripts directory
-# Using your Neon dashboard or psql CLI:
-psql $DATABASE_URL < scripts/001_create_users_table.sql
-psql $DATABASE_URL < scripts/002_create_ai_configurations_table.sql
-# ... etc for other migration scripts
+# Create users table
+psql -f scripts/001-create-users-table.sql
+
+# Create gallery tables
+psql -f scripts/000-create-gallery-tables.sql
+
+# Create token purchases table
+psql -f scripts/002-create-token-purchases-table.sql
+
+# Create NFTs table
+psql -f scripts/create-nfts-table.sql
+
+# Create token burns table
+psql -f scripts/create-token-burns-table.sql
+
+# Fix credit columns
+psql -f scripts/002_fix_credit_columns_bigint.sql
+
+# Add NSFW column
+psql -f scripts/add-nsfw-column.sql
 ```
 
-5. **Start the development server**
+5. **Run development server**
 ```bash
-npm run dev
-# or
 pnpm dev
+# or
+npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
+The application will be available at `http://localhost:3000`
 
-## 📝 Usage Guide
+## Project Structure
 
-### Creating an AI Agent
+```
+alpha-intelligence/
+├── app/                          # Next.js app directory
+│   ├── api/                     # API routes
+│   │   ├── chat/               # Chat endpoint
+│   │   ├── generate-image/      # Image generation
+│   │   ├── generate-video/      # Video generation
+│   │   ├── generate-nft-image/  # NFT image generation
+│   │   ├── mint-nft/           # NFT minting
+│   │   ├── gallery/            # Gallery operations
+│   │   ├── tokens/             # Token management
+│   │   ├── token-purchase/     # Purchase tracking
+│   │   ├── token-burn/         # Token burn mechanism
+│   │   ├── voice-chat/         # Voice chat (Hume AI)
+│   │   ├── admin/              # Admin operations
+│   │   └── ...                 # Other endpoints
+│   ├── create/                 # Image/video creation page
+│   ├── chat/                   # Chat interface
+│   ├── voice-chat/             # Voice chat page
+│   ├── gallery/                # Community gallery
+│   ├── mint-nft/               # NFT minting interface
+│   ├── rewards/                # Rewards dashboard
+│   ├── admin/                  # Admin panel
+│   ├── docs/                   # Documentation
+│   ├── whitepaper/             # Project whitepaper
+│   ├── layout.tsx              # Root layout
+│   └── page.tsx                # Home page
+├── components/
+│   ├── ui/                     # Radix UI components
+│   ├── gl/                     # Three.js/WebGL components
+│   ├── header.tsx              # Navigation header
+│   ├── hero.tsx                # Hero section
+│   ├── credit-system.tsx       # Credit display & management
+│   ├── wallet-connect-button.tsx # Solana wallet connection
+│   ├── gallery.tsx             # Gallery components
+│   ├── token-burn.tsx          # Token burn interface
+│   └── ...                     # Other components
+├── hooks/
+│   ├── use-toast.ts            # Toast notifications
+│   └── use-mobile.tsx          # Mobile detection
+├── lib/
+│   ├── database.ts             # Database utilities
+│   ├── credit-system.ts        # Credit logic
+│   ├── ai-content-moderator.ts # Content moderation
+│   ├── nsfw-detector.ts        # NSFW detection
+│   ├── jupiter-api.ts          # Jupiter DEX integration
+│   ├── token-swap.ts           # Token swap logic
+│   ├── token-burn-tracking.ts  # Token burn tracking
+│   ├── token-purchase-tracking.ts # Purchase tracking
+│   ├── chat-utils.ts           # Chat utilities
+│   ├── user-management.ts      # User operations
+│   ├── revshare.ts             # Revenue sharing
+│   ├── pinata.ts               # IPFS/Pinata integration
+│   └── utils.ts                # General utilities
+├── public/                     # Static assets
+│   ├── images/                # Image assets
+│   └── fonts/                 # Custom fonts
+├── styles/
+│   └── globals.css            # Global styles
+├── scripts/                    # Database migration scripts
+├── package.json               # Dependencies
+├── tsconfig.json              # TypeScript config
+├── tailwind.config.ts         # Tailwind CSS config
+├── next.config.ts             # Next.js config
+└── README.md                  # This file
+```
 
-1. **Connect Wallet**: Click wallet icon and select your Solana wallet
-2. **Navigate to AI Studio**: Select "Create" or "AI Studio"
-3. **Configure Agent**:
-   - Set agent name and description
-   - Choose AI model (Claude, GPT-4, Gemini)
-   - Write system prompt defining personality
-   - Adjust parameters and settings
-4. **Test & Deploy**: Test your agent, then publish to the platform
-5. **Monetize**: Create a token for your agent (optional)
+## Environment Variables Guide
 
-### Interacting with Agents
+### Database
+- `DATABASE_URL`: PostgreSQL connection string (from Neon)
 
-1. **Browse Agents**: Go to "Explore" section
-2. **Select an Agent**: Click on an agent card
-3. **Chat**: Send messages and interact with the agent
-4. **Share**: Share agent links or purchase tokens
+### Blockchain
+- `NEXT_PUBLIC_SOLANA_NETWORK`: Network to use (devnet, testnet, mainnet-beta)
+- `NEXT_PUBLIC_SOLANA_RPC_URL`: Solana RPC endpoint
 
-### Managing Tokens
+### AI & LLM Services
+- `GROQ_API_KEY`: API key from Groq (for fast inference)
+- `OPENROUTER_API_KEY`: API key from OpenRouter (multi-model support)
 
-1. **Create Token**: In agent settings, mint a token
-2. **View Holdings**: Check wallet and holdings in dashboard
-3. **Trade**: Trade tokens on integrated DEXs
-4. **Earn Rewards**: Receive revenue shares from agent interactions
+### Voice Chat Integration
+- `HUME_API_KEY`: Hume AI API key
+- `HUME_SECRET_KEY`: Hume AI secret key
+- `NEXT_PUBLIC_HUME_CONFIG_ID`: Hume EVI configuration ID (optional)
 
-## 🔌 API Endpoints
+See `HUME_SETUP.md` for detailed Hume AI configuration instructions.
 
-### AI Configurations
-- `POST /api/ai-configurations` - Create new AI agent
-- `GET /api/ai-configurations` - List all agents
-- `GET /api/ai-configurations/[id]` - Get agent details
-- `PUT /api/ai-configurations/[id]` - Update agent
-- `DELETE /api/ai-configurations/[id]` - Delete agent
-- `GET /api/ai-configurations/user/[walletAddress]` - Get user's agents
-- `GET /api/ai-configurations/by-name/[slug]` - Get agent by name
+### Storage & IPFS
+- `PINATA_API_KEY`: Pinata API key
+- `PINATA_API_SECRET`: Pinata API secret
+- `BLOB_READ_WRITE_TOKEN`: Vercel Blob token
 
-### Chat
-- `POST /api/chat` - Send message to AI agent
+### DEX Integration
+- `JUPITER_API_URL`: Jupiter API endpoint
 
-### Tokens
-- `POST /api/tokens` - Create token for agent
-- `GET /api/tokens` - List tokens
-- `GET /api/tokens/[id]` - Get token details
+### Admin
+- `ADMIN_PASSWORD`: Secure password for admin panel
 
-### Users
-- `POST /api/users` - Create user profile
-- `GET /api/users` - Get user details
-- `PUT /api/users/update` - Update profile
-- `POST /api/users/check-username` - Validate username
+## API Endpoints
 
-### Additional
-- `POST /api/upload` - Upload files
-- `POST /api/enhance-prompt` - Enhance prompt with AI
-- `GET /api/rewards` - Get user rewards
-- `GET /api/distributions` - Get token distributions
+### Image & Content Generation
+- `POST /api/generate-image` - Generate AI images
+- `POST /api/enhance-prompt` - Enhance prompts with AI
+- `POST /api/generate-video` - Generate videos
+- `POST /api/generate-token-image` - Generate token images
+- `POST /api/generate-nft-image` - Generate NFT artwork
 
-## 🎨 UI Components
+### Chat & Conversation
+- `POST /api/chat` - Send chat messages
+- `POST /api/voice-chat` - Voice chat interface
 
-The project includes comprehensive pre-built Radix UI components:
+### Gallery Management
+- `POST /api/gallery/save` - Save gallery item
+- `GET /api/gallery/list` - List gallery items
+- `GET /api/gallery/top-photos` - Get trending items
+- `POST /api/gallery/vote` - Vote on items
+- `GET /api/gallery/vote-status` - Check vote status
+- `DELETE /api/gallery/delete` - Delete gallery item
 
-- **Forms**: Input, Label, Field, Textarea, Checkbox, Radio, Select
-- **Data Display**: Table, Card, Avatar, Badge, Progress, Skeleton
-- **Feedback**: Alert, Toast, Dialog, Sheet, Popover, Dropdown
-- **Navigation**: Tabs, NavigationMenu, Breadcrumb, Pagination
-- **Input**: Slider, Toggle, Switch, InputOTP
-- **Utilities**: Separator, Tooltip, ScrollArea, Resizable
+### Token Operations
+- `POST /api/tokens` - Get token information
+- `POST /api/token-purchase` - Record purchase
+- `POST /api/save-token` - Save token details
+- `POST /api/launch-token` - Launch new token
+- `POST /api/upload-token-image` - Upload token image
+- `POST /api/generate-token-details` - Generate token metadata
 
-## 🌙 Theming
+### NFT Operations
+- `POST /api/mint-nft` - Mint NFT
+- `GET /api/check-mint-status` - Check mint status
+- `POST /api/download-image` - Download generated image
 
-The application supports light and dark modes with Next.js Themes:
+### Token Economics
+- `POST /api/token-burn` - Record token burn
+- `POST /api/revshare` - Calculate revenue sharing
 
-- Theme provider configured in `components/theme-provider.tsx`
-- Tailwind CSS dark mode support
-- Automatic system preference detection
+### User Management
+- `GET /api/user` - Get user profile
+- `POST /api/admin/auth` - Admin authentication
 
-## 📦 Building for Production
+### Admin Tools
+- `POST /api/admin/toggle-nsfw` - Toggle NSFW status
+- `DELETE /api/admin/delete-image` - Delete image
+- `POST /api/hume-token` - Get Hume token
 
+## Database Schema
+
+### Key Tables
+
+**users**
+- id (UUID)
+- wallet_address (TEXT)
+- credits (BIGINT)
+- created_at (TIMESTAMP)
+- updated_at (TIMESTAMP)
+
+**gallery**
+- id (UUID)
+- user_id (UUID)
+- image_url (TEXT)
+- prompt (TEXT)
+- votes (BIGINT)
+- is_nsfw (BOOLEAN)
+- content_type (TEXT)
+- created_at (TIMESTAMP)
+
+**token_purchases**
+- id (UUID)
+- user_id (UUID)
+- token_address (TEXT)
+- amount (DECIMAL)
+- tx_hash (TEXT)
+- created_at (TIMESTAMP)
+
+**nfts**
+- id (UUID)
+- user_id (UUID)
+- mint_address (TEXT)
+- metadata_uri (TEXT)
+- created_at (TIMESTAMP)
+
+**token_burns**
+- id (UUID)
+- user_id (UUID)
+- amount (DECIMAL)
+- tx_hash (TEXT)
+- created_at (TIMESTAMP)
+
+## Build & Deployment
+
+### Build for Production
 ```bash
+pnpm build
+# or
 npm run build
-npm run start
 ```
 
-The application will be optimized and ready for deployment:
-- Static optimization of Next.js pages
-- Code splitting and lazy loading
-- Asset compression and caching
-
-## 🔐 Security Considerations
-
-- Environment variables for sensitive keys
-- Wallet signature verification for user authentication
-- SQL injection prevention through parameterized queries
-- CORS and CSP headers configuration
-- Input validation with Zod schema
-
-## 🌐 Deployment
-
-### Vercel (Recommended)
+### Start Production Server
 ```bash
+pnpm start
+# or
+npm start
+```
+
+### Deploy to Vercel
+1. Push code to GitHub
+2. Import repository in Vercel dashboard
+3. Add environment variables in project settings
+4. Vercel will automatically deploy on push
+
+```bash
+# Or deploy from CLI
+npm i -g vercel
 vercel
 ```
 
-### Docker
+## Development
+
+### Run Dev Server
 ```bash
-docker build -t ai-fi .
-docker run -p 3000:3000 ai-fi
+pnpm dev
 ```
 
-### Other Platforms
-- Railway
-- Render
-- AWS Lambda + API Gateway
-- Google Cloud Run
+### Lint Code
+```bash
+pnpm lint
+```
 
-## 📈 Performance Optimization
+### Format Code
+```bash
+pnpm format  # If configured
+```
 
-- Next.js Image optimization
-- Automatic code splitting
-- CSS and JS minification
-- Server-side rendering and static generation
-- API route optimization
-- Database connection pooling
+## Configuration Files
 
-## 🤝 Contributing
+### Next.js Config (`next.config.ts`)
+- Image optimization
+- Webpack configuration
+- Environment setup
 
-We welcome contributions! Please follow these steps:
+### Tailwind Config (`tailwind.config.ts`)
+- Custom colors and theming
+- Animation configurations
+- Plugin setup
+
+### TypeScript Config (`tsconfig.json`)
+- Strict mode enabled
+- Module resolution settings
+- Path aliases (@/)
+
+### PostCSS Config (`postcss.config.mjs`)
+- Tailwind CSS integration
+- Autoprefixer support
+
+## Security Considerations
+
+1. **Admin Panel**: Password protected with secure authentication
+2. **NSFW Detection**: Multiple layers of content filtering
+3. **Wallet Verification**: Signed transactions for all blockchain operations
+4. **API Keys**: Never commit `.env.local` to version control
+5. **CORS**: Configured for specific origins
+6. **Rate Limiting**: Implement on API routes in production
+7. **Input Validation**: Zod schemas for all user inputs
+
+## Performance Optimization
+
+- Server-side rendering for static content
+- Image optimization with Next.js Image component
+- Code splitting and lazy loading
+- Caching strategies for API responses
+- WebGL optimization for 3D visualizations
+- Database query optimization with indexes
+
+## Troubleshooting
+
+### Common Issues
+
+**Issue**: Solana wallet not connecting
+- Solution: Ensure wallet extension is installed and network matches configuration
+
+**Issue**: Image generation timeout
+- Solution: Check API key quotas and rate limits with provider
+
+**Issue**: Database connection errors
+- Solution: Verify `DATABASE_URL` and network connectivity to Neon
+
+**Issue**: Hume voice chat not working
+- Solution: Verify `HUME_API_KEY` and `HUME_SECRET_KEY` are set correctly
+
+**Issue**: Token swap failing
+- Solution: Check Jupiter API status and liquidity for token pair
+
+## Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit changes (`git commit -m 'Add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+5. Open Pull Request
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is proprietary. Unauthorized copying or distribution is prohibited.
 
-## 🙏 Acknowledgments
+## Support
 
-- **Vercel** for Next.js and deployment infrastructure
-- **Radix UI** for accessible component primitives
-- **Solana** for blockchain integration
-- **Anthropic, OpenAI, Google** for AI model access
-- **Pump.fun, Raydium, Meteora** for DEX integrations
+For issues, questions, or feature requests:
+- Open an issue on GitHub
+- Contact: support@alphaintelligence.ai
+- Documentation: https://alphaintelligence.ai/docs
 
-## 📞 Support & Contact
+## Acknowledgments
 
-- **Website**: https://genesisai.app / https://aifi.app
-- **Twitter**: @TryGenesisAI
-- **Issues**: GitHub Issues
-- **Discussions**: GitHub Discussions
-
-## 🗺️ Roadmap
-
-- [ ] Mobile app (React Native)
-- [ ] Advanced analytics dashboard
-- [ ] Custom model fine-tuning
-- [ ] Agent marketplace with ratings
-- [ ] Advanced revenue sharing models
-- [ ] Multi-chain support
-- [ ] AI agent guilds and communities
-- [ ] Governance and DAO features
+- Built with [Next.js](https://nextjs.org)
+- UI Components from [Radix UI](https://radix-ui.com)
+- Styling with [Tailwind CSS](https://tailwindcss.com)
+- 3D Graphics with [Three.js](https://threejs.org)
+- Blockchain: [Solana](https://solana.com)
+- AI Models: [Groq](https://groq.com), [OpenRouter](https://openrouter.ai)
+- Voice AI: [Hume AI](https://hume.ai)
+- DEX: [Jupiter](https://jup.ag)
 
 ---
 
-**Built with ❤️ using Next.js, Solana, and cutting-edge AI**
+**Alpha Intelligence** - Powered by advanced AI and blockchain technology
