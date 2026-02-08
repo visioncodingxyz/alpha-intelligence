@@ -514,8 +514,7 @@ This project is proprietary. Unauthorized copying or distribution is prohibited.
 
 For issues, questions, or feature requests:
 - Open an issue on GitHub
-- Contact: support@alphaintelligence.ai
-- Documentation: https://alphaintelligence.ai/docs
+- Contact: info@visioncoding.xyz
 
 ## Acknowledgments
 
