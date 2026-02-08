@@ -2,8 +2,6 @@
 
 A decentralized platform built on Solana that empowers users to create, customize, deploy, and monetize personalized AI agents with unique personalities. Built with Next.js, React, and integrated with leading AI models (Claude, GPT-4, Gemini).
 
-![AiFi - Tokenized AI Agent Platform](./public/og-image.png)
-
 ## 🚀 Overview
 
 AiFi is a Web3-enabled platform that bridges artificial intelligence with blockchain technology. Users can:
